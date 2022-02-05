@@ -54,7 +54,7 @@ ROOT_URLCONF = 'webdevcloud.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['webdevcloud/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
