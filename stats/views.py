@@ -7,7 +7,7 @@ def index(request):
         'title' : 'Statistic',
         'body' : 'This is Statistic pages'
     }
-    return render(request, 'stats.html', ctx)
+    return render(request, 'index.html', ctx)
 
 def individual(request):
     ctx = {

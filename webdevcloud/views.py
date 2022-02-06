@@ -5,7 +5,10 @@ def index(request):
     return HttpResponse("<h1> Index </h1>")
 
 def about(request):
-    return render(request, 'about.html')
+    ctx = {
+        'body' : 'This is About page'
+    }
+    return render(request, 'index.html', ctx)
 
 def homepage(request):
     return render(request, 'index.html')
