@@ -3,7 +3,15 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request, 'stats.html')
+    ctx = {
+        'title' : 'Statistic',
+        'body' : 'This is Statistic pages'
+    }
+    return render(request, 'stats.html', ctx)
 
-def individual(requet):
-    return HttpResponse('<h1> Individual Pages </h1>')
+def individual(request):
+    ctx = {
+        'title' : 'Individual',
+        'body' : 'This is individual pages'
+    }
+    return render(request, 'stats.html', ctx)
