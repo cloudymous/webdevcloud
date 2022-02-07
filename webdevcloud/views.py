@@ -11,4 +11,4 @@ def about(request):
     return render(request, 'index.html', ctx)
 
 def homepage(request):
-    return render(request, 'index.html')
+    return render(request, 'homepage.html')
